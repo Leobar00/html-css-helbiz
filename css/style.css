@@ -48,10 +48,24 @@ html{
 }
 .bottom-header img{
   width: 8%;
+  position:relative;
+
 }
-.vert-oriz-center{
+.bottom-header > .vert-oriz-center{
   position:absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+
+}
+.bottom-header h1{
+  font-size:35px;
+  margin-bottom: 20px;
+}
+.bottom-header p{
+  font-size:12px;
+  margin-bottom: 15px;
+
 }
