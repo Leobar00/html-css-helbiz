@@ -11,7 +11,7 @@ html{
   border: 1px solid black;
 }
 
-.top-header [class*="col-"]{
+.top-header [class*="col-"]:not(:last-child){
   height: 80px;
 }
 .top-header{
@@ -44,6 +44,7 @@ html{
 .bottom-header{
   background-image: url("../img/hero-bg.jpg");
   height: 500px;
+  position:relative;
 
 }
 .bottom-header img{
@@ -67,5 +68,28 @@ html{
 .bottom-header p{
   font-size:12px;
   margin-bottom: 15px;
+
+}
+.h-1000{
+  background-color: black;
+}
+@media screen and (max-width:991px) and (min-width:769px) {
+  .top-header [class*="col-"]:last-child{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and  (max-width:769px) {
+  .top-header [class*="col-"]:last-child{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+
 
 }
