@@ -48,7 +48,7 @@ html{
 
 }
 .bottom-header img{
-  width: 8%;
+  width: 10%;
   position:relative;
 
 }
@@ -62,23 +62,49 @@ html{
 
 }
 .bottom-header h1{
-  font-size:35px;
+  font-size:2.0rem;
   margin-bottom: 20px;
 }
 .bottom-header p{
-  font-size:12px;
+  font-size:0.6rem;
   margin-bottom: 15px;
 
 }
 .h-1000{
   background-color: black;
 }
+.main-product{
+  height:600px;
+
+}
+.main-product [class*="col-"]{
+  height: 90%;
+  border: 1px solid black;
+}
+.back-product{
+  background-color: grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-product img{
+  width: 100%;
+}
 @media screen and (max-width:991px) and (min-width:769px) {
+  .container{
+    width: 100vw;
+
+  }
   .top-header [class*="col-"]:last-child{
     text-align: right;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .bottom-header h1 {
+    font-size: 1.5rem;
+  }
+  .bottom-header img{
+    width: 100px;
   }
 }
 @media screen and  (max-width:769px) {
@@ -89,7 +115,14 @@ html{
     transform: translateY(-50%);
 
   }
-
-
+  .container{
+    width: 100vw;
+  }
+  .bottom-header h1 {
+    font-size: 1.5rem;
+  }
+  .bottom-header img{
+    width: 80px;
+  }
 
 }
