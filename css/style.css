@@ -27,12 +27,12 @@ html{
   display: inline-block;
   margin-left: 20px;
 }
-[class*="col-"]  a{
+[class*="col-"] li  a{
   font-size: 0.6rem;
   text-decoration: none;
   color: black;
-
 }
+
 .top-header [class*="col-"] ul{
   text-align: right;
   line-height: 80px;
@@ -82,13 +82,46 @@ html{
   border: 1px solid black;
 }
 .back-product{
-  background-color: grey;
+  background-color: #fafafa;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
-.main-product img{
-  width: 100%;
+.back-product img:first-child{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 20px;
 }
+.back-product img:last-child{
+  width: 90%;
+  margin: 30px 20px;
+}
+.vert-oriz-center{
+  position: relative;
+
+}
+.vert-oriz-center  p{
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+  margin:20px auto;
+
+}
+.vert-oriz-center a{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: none;
+  margin:5px auto;
+  font-size: 0.8rem;
+}
+
+
+
+
 @media screen and (max-width:991px) and (min-width:769px) {
   .container{
     width: 100vw;
