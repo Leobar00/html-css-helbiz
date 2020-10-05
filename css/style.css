@@ -80,7 +80,7 @@ html{
 }
 .main-product [class*="col-"]{
   height: 90%;
-  border: 1px solid black;
+
 }
 .back-product{
   background-color: #fafafa;
@@ -143,6 +143,11 @@ html{
   float: right;
   position: relative;
   top: 120%;
+}
+#section-2::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #section-2 h3{
