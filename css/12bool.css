@@ -170,7 +170,7 @@
   }
 }
 
-@media screen and (max-width: 991px) and (min-width: 769px){
+@media screen and (max-width: 992px) and (min-width: 769px){
   /* colonne della griglia per tablet*/
   .col-md-1{
     width: calc((100% / 12) * 1);
